@@ -1,6 +1,6 @@
 # Getting started with Fabric and Composer
 
-Esse documento descreve o Meetup com hands-on. Os arquivos necessários para a execução se encontram neste repositório.
+Esse documento descreve o Workshop com hands-on. Os arquivos necessários para a execução se encontram neste repositório.
 
 
 
