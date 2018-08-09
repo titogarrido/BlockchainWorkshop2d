@@ -424,7 +424,7 @@ A script has been provided to do this. Run the *createPeerAdminCard* script::
 Section 3: Hyperledger Composer Playground
 ==========================================
 
-In this section, you will work with the Hyperledger Composer Playground on your Ubuntu IBM on Z instance.
+In this section, you will work with the Hyperledger Composer Playground on your SuSE IBM on Z instance.
 
 You will then load into the Playground the same DigitalProperty Network that you just used in the prior section of this lab, but, you will be working in Web Browser mode-  the changes you make with the Playground will be within your web browser storage only, and will not be reflected in the Hyperledger Fabric network until near the end of *Section 4*, when you will take specific steps to export your changes from the Playground and update your Hyperledger Fabric network to use them.
 
@@ -480,7 +480,7 @@ Do not click on this!  This would connect you to the Hyperledger Fabric.  That c
 
 .. image:: images/lab4/3.08_digitalpropertynetwork.png
 
-**Note:** This will load the same *Digital Property Network* sample application that you worked with in the prior section of this lab.  However, it is not loading it from your Ubuntu on IBM Z instance.  It is getting it from the Internet- but since you did not make any changes to the network definition in section 2, what you are getting here is the same as what you worked with in section 2.  I could have had you download the Business Network Archive file from your Ubuntu instance to your classroom laptop and then upload that file to the Hyperledger Composer Playground.  But to save you the tedium of having to do that now, I just had you load it from the Internet.  You only have the luxury of doing that because you are working with Hyperledger Composer-provided sample applications, so the Hyperledger Composer Playground GUI is aware of them.
+**Note:** This will load the same *Digital Property Network* sample application that you worked with in the prior section of this lab.  However, it is not loading it from your SuSE on IBM Z instance.  It is getting it from the Internet- but since you did not make any changes to the network definition in section 2, what you are getting here is the same as what you worked with in section 2.  I could have had you download the Business Network Archive file from your SuSE instance to your classroom laptop and then upload that file to the Hyperledger Composer Playground.  But to save you the tedium of having to do that now, I just had you load it from the Internet.  You only have the luxury of doing that because you are working with Hyperledger Composer-provided sample applications, so the Hyperledger Composer Playground GUI is aware of them.
 
 **Step 3.9:** Scroll up in your browser window and in the upper right you should see some information about the digitalproperty-network:
 
@@ -492,7 +492,7 @@ Click the **Deploy** button underneath this information.
 
 .. image:: images/lab4/3.10_CardNameMustBeUnique.png
 
-Here is what happened.  I did not instruct you to fill in this field, so by default Hyperledger Composer is trying to create a new business network card with the name of *admin@digitalproperty-network* on your Ubuntu instance's file system. This business network card cannot exist already.  However, in the last section, your activities in that section already created a business network card of this name.  All of the Hyperledger Composer tools look for the business network cards in the same place, in ``$HOME/.composer``, so Hyperledger Composer Playground was smart enough to detect that a card by this name already existed.
+Here is what happened.  I did not instruct you to fill in this field, so by default Hyperledger Composer is trying to create a new business network card with the name of *admin@digitalproperty-network* on your SuSE instance's file system. This business network card cannot exist already.  However, in the last section, your activities in that section already created a business network card of this name.  All of the Hyperledger Composer tools look for the business network cards in the same place, in ``$HOME/.composer``, so Hyperledger Composer Playground was smart enough to detect that a card by this name already existed.
 
 **Step 3.11:** Work around this by specifying a unique name in this field.  Type in **admin@digitalproperty-network-web** and then click **Deploy** again:
 
@@ -723,7 +723,7 @@ In this step, the command is performed on your laptop or workstation. The above 
 
   Command succeeded
 
-**Note:** Your updates were made in the Web Browser mode with Hyperledger Composer Playground, and they are saved in the *Business Network Archive (.bna)* that you just uploaded to your Ubuntu on IBM Z instance, but they haven't yet been added to the business network running on Hyperledger Fabric.
+**Note:** Your updates were made in the Web Browser mode with Hyperledger Composer Playground, and they are saved in the *Business Network Archive (.bna)* that you just uploaded to your SuSE on IBM Z instance, but they haven't yet been added to the business network running on Hyperledger Fabric.
 
 **Step 4.34:** Now run the *npm* command which will submit a transaction.  The output will *not* have your updates to the transaction where you added the phrase *“He really needs the money!”* to the *information*::
 
@@ -1034,7 +1034,7 @@ In this section, you will use tools that will allow you to generate a simple fro
 
 **Step 6.4:** Enter the following command to begin the generation of an AngularJS application based on your Hyperledger Composer Business Network::
 
- linux1@ubuntu160424:~$ yo hyperledger-composer:angular
+ linux1@suse123:~$ yo hyperledger-composer:angular
 
 **Step 6.5:** You will be given several prompts.  Enter the values as shown (many of them are defaults and are given to you already, in which case you can just hit enter). Substitute the last octet of your IP address for the *xx* shown in this example::
 
