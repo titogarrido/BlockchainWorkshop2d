@@ -56,9 +56,9 @@ scripts::
   },
 
 
- linux1@suse123:~/composer-sample-applications/packages/digitalproperty-app$ npm install
-
 When *npm install* is run, it first runs the commands listed in the *“preinstall”* name/value pair.  Then, it installs any packages in the *“dependencies”* section (not shown in this output snippet) that are not already installed.  After that it will run the command listed in the *“postinstall”* name/value pair.
+
+ linux1@suse123:~/composer-sample-applications/packages/digitalproperty-app$ npm install
 
 **Step 2.6:** You can exit this file now by typing in ``:q!`` - if hitting the colon key does not take your cursor to the command line
 at the bottom of your screen try hitting the **Escape key** and retrying ``:q!``.
